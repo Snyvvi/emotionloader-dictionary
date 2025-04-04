@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Emotionloader Dictionary"
+run/main_scene="uid://bwo8nb3xr0f8r"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalVariables="*res://Globals/global_variables.gd"
+SaveLoader="*res://Globals/save_loader.gd"
+
+[global_group]
+
+MomoDummy=""

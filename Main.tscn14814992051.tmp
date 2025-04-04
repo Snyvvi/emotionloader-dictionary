@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwo8nb3xr0f8r"]
+
+[ext_resource type="PackedScene" uid="uid://caoqtuio1as12" path="res://MomoDummy.tscn" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://dum6xffkul34f" path="res://main.gd" id="1_uu6xs"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_uu6xs")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 700.0
+offset_bottom = 661.0
+
+[node name="DummyContainer" type="VBoxContainer" parent="Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MomoDummy" parent="Panel/DummyContainer" instance=ExtResource("1_glv2v")]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 740.0
+offset_top = 32.0
+offset_right = 1126.0
+offset_bottom = 151.0
+
+[node name="SaveButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "save emotions and exit game"
+
+[node name="LoadButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "load save file"
+
+[node name="NewDayButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "next day"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+offset_left = 839.0
+offset_top = 305.0
+offset_right = 1027.0
+offset_bottom = 371.0
+
+[node name="AddMomo" type="Button" parent="VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Add Momo"

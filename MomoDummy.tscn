@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://caoqtuio1as12"]
+
+[ext_resource type="Texture2D" uid="uid://cwb2b082fqnr2" path="res://icon.svg" id="1_7lybp"]
+[ext_resource type="Script" uid="uid://bav3120pymaxh" path="res://momo_dummy.gd" id="1_h5g7k"]
+
+[node name="MomoDummy" type="HBoxContainer" groups=["MomoDummy"]]
+theme_override_constants/separation = 20
+script = ExtResource("1_h5g7k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_7lybp")
+
+[node name="EmotionLabel" type="Label" parent="."]
+layout_mode = 2
+text = "no emotion ._."
+
+[node name="IDLabel" type="Label" parent="."]
+layout_mode = 2
+text = "ID: 123456"
+
+[node name="RemoveButton" type="Button" parent="."]
+layout_mode = 2
+text = "Remove"
